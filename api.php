@@ -45,7 +45,7 @@ $dataString = '[
     }
 ]';
 
-//$data = json_decode($dataString, true);
+
 header('Content-Type: application/json');
 
 echo ($dataString);

@@ -24,8 +24,23 @@
 
         <main id="app">
             <div class="container">
-                <div class="row">
-                    {{ message }}
+                <div class="row g-3">
+                    <div v-for="disc in discs" class="col-12 col-sm-6 col-md-4">
+                        <div class='card'>
+                            <div>
+                                <img src="disc.poster" alt="disc.title">
+                            </div>
+                            <h2>
+                                {{ disc.title }}
+                            </h2>
+                            <p>
+                                {{ disc.author }}
+                            </p>
+                            <h4>
+                                {{ disc.year }}
+                            </h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
